@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import CohereEmbeddings
@@ -8,8 +7,9 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.llms import Cohere
 from langchain.chains.question_answering import load_qa_chain
 
-load_dotenv()
-COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+# Use Streamlit Secrets instead of dotenv
+COHERE_API_KEY = st.secrets["COHERE_API_KEY"]
+
 
 # -------------------- Core RAG Logic --------------------
 

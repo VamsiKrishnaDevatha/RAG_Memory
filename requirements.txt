@@ -1,9 +1,8 @@
+streamlit
+PyPDF2
 langchain
 langchain_community
-PyPDF2
-python-dotenv
-streamlit
-openai
+cohere
 faiss-cpu
 altair
 tiktoken
