@@ -44,7 +44,7 @@ def handle_user_input(user_question, vectorstore, chain):
 
 # -------------------- Streamlit UI --------------------
 
-st.set_page_config(page_title="PDF Chatbot", layout="wide")
+st.set_page_config(page_title="PDF Chatbot", layout="wide",page_icon=":books:")
 st.markdown("""
     <style>
     .user-bubble {
